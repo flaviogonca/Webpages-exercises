@@ -14,7 +14,6 @@
   }
 
   /* Header styles */
-
   .header-icons img {
     height: 20px;
     padding: 0px 3px 0px 3px;
@@ -34,11 +33,10 @@
   }
 
   .main-nav li.active a {
-    color: var(--primary);
+    color: #A86A3D;
   }
 
   /* Service Bar */
-
   .service-item img {
     height: 20px;
   }
@@ -46,4 +44,67 @@
   .service-item span {
     font-size: 12px;
     color: #00000080;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    background-color: #DBD0CCCC;
+    padding: 3rem 0;
+    border: solid #000000 1px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .hero-image img{
+    height: 400px;
+  }
+  
+  .hero-text {
+    max-width: 50%;
+  }
+  
+  .hero-text h2 {
+    color: var(--primary);
+  }
+  
+  .btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    letter-spacing: 0.5px;
+  }
+  
+  .btn-outline {
+    background: transparent;
+    border: 1px solid var(--foreground);
+    border-radius: 0%;
+    color: var(--foreground);
+  }
+  
+  .btn-outline:hover {
+    background: var(--foreground);
+    color: var(--background);
+  }
+  
+  .btn-dark {
+    background: var(--foreground);
+    border: 1px solid var(--foreground);
+    color: var(--background);
+  }
+  
+  .btn-dark:hover {
+    background: transparent;
+    color: var(--foreground);
+  }
+
+  /* Responsivines */
+
+  @media (max-width: 770px){
+    .main-nav{
+      background-color:  red;
+      ul li{
+        padding: 0px 5px 0px 5px !important;
+      }
+    }
   }
