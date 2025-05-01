@@ -108,3 +108,50 @@
       }
     }
   }
+
+  /* Featured Products Section */
+  
+  .Product-card-1 {
+    height: 360px;
+    background-color: #FAFAFA;
+  }
+
+  .Product-card-2 {
+    height: 360px;
+    background-color: #EAE9E7;
+  }
+
+  .decor {
+    background-color: #EAE9E7;
+  }
+
+
+
+  /* .product-card {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    background-color: #fff;
+    transition: box-shadow 0.3s ease;
+    height: 100%;
+  }
+  
+  .product-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-card img {
+    height: 180px;
+    object-fit: contain;
+  }
+  
+  .product-card .price {
+    font-weight: bold;
+    color: var(--primary);
+  }
+  
+  .product-card .rating {
+    font-size: 0.9rem;
+    color: #ffcc00;
+    margin-bottom: 0.5rem;
+  }
+   */
