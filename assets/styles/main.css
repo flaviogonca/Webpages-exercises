@@ -195,3 +195,13 @@
     color: #6c757d;
     margin-top: 1rem;
   }
+
+  /* Top Rating */
+  .product-rating {
+    height: 300px;
+    margin-top: 20px;
+  }
+
+  .rate {
+    width: 190px;
+  }
