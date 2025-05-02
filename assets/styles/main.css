@@ -121,37 +121,77 @@
     background-color: #EAE9E7;
   }
 
-  .decor {
-    background-color: #EAE9E7;
+   .card-decor {
+    position: relative;
+    background-image: url('../images/decor.png');
+    background-size: cover;
+    background-position: center;
+    height: 560px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
   }
 
+  .card-overlay {
+    padding: 1.5rem;
+    color: #fff;
+    text-align: left;
+    max-width: 280px;
+  }
 
-
-  /* .product-card {
-    border: 1px solid #ddd;
-    padding: 1rem;
-    background-color: #fff;
-    transition: box-shadow 0.3s ease;
-    height: 100%;
-  }
-  
-  .product-card:hover {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  }
-  
-  .product-card img {
-    height: 180px;
-    object-fit: contain;
-  }
-  
-  .product-card .price {
+  .card-overlay h5 {
     font-weight: bold;
-    color: var(--primary);
+    color: white;
+  }
+
+  .card-overlay p {
+    font-size: 0.9rem;
+  }
+
+  .btn-outline-light {
+    border-color: white;
+    color: white;
+  }
+
+  .btn-outline-light:hover {
+    background-color: white;
+    color: black;
+  }
+
+  /* bed-sectio */
+
+  .bed-banner {
+    position: relative;
+    background-image: url('../images/bed.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 510px;
+    display: flex;
+    align-items: center;
   }
   
-  .product-card .rating {
-    font-size: 0.9rem;
-    color: #ffcc00;
-    margin-bottom: 0.5rem;
+  .product-overlay {
+    background: rgba(255, 255, 255, 0.9);
+    max-width: 400px;
+    margin-left: 135px;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    position: relative;
   }
-   */
+  .product-price {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #7B5136;
+  }
+  .product-old-price {
+    text-decoration: line-through;
+    color: #7B5136;
+    margin-left: 0.5rem;
+    font-size: 0.95rem;
+  }
+  .product-description {
+    color: #6c757d;
+    margin-top: 1rem;
+  }
