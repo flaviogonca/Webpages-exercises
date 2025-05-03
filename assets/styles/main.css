@@ -14,6 +14,11 @@
   }
 
   /* Header styles */
+
+  .logo-2 {
+    display: none;
+  }
+
   .header-icons img {
     height: 20px;
     padding: 0px 3px 0px 3px;
@@ -96,17 +101,6 @@
   .btn-dark:hover {
     background: transparent;
     color: var(--foreground);
-  }
-
-  /* Responsivines */
-
-  @media (max-width: 770px){
-    .main-nav{
-      background-color:  red;
-      ul li{
-        padding: 0px 5px 0px 5px !important;
-      }
-    }
   }
 
   /* Featured Products Section */
@@ -205,3 +199,54 @@
   .rate {
     width: 190px;
   }
+
+
+  /* NEWSLETTER SECTION */
+  .subscribe-section {
+    padding: 3rem 0;
+  }
+
+  .btn-dark-custom {
+    background-color: var(--foreground);
+    color: white;
+    border-radius: 0%;
+    font-weight: bold;
+  }
+  .input-group .btn {
+    border: none;
+  }
+
+
+    /* Responsiviness */
+
+    @media (max-width: 992px){
+      .line {
+        display: none;
+      }
+      .logo {
+        display: none;
+      }
+      .logo-2 {
+        display: block;
+      }
+      .service-bar {
+        display: none;
+      }
+      .hero-image img{
+        height: 200px;
+      }
+      .hero-text h2 {
+        font-size: 20px;
+      }
+      .hero-text p {
+        font-size: 14px;
+      }
+      .product-rating {
+        height: 150px;
+      }
+    
+      .rate {
+        width: 100px;
+      }
+    }
+    
