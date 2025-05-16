@@ -1,5 +1,4 @@
 :root {
-    --background: #ffffff;
     --foreground: #323334;
     --primary: #A86A3D;
   }
@@ -10,7 +9,7 @@
     margin: 0;
     font-family: 'Roboto', sans-serif;
     color: var(--foreground);
-    background-color: var(--background);
+    /* background-color: #ffffff; */
   }
 
   /* Header styles */
@@ -21,7 +20,7 @@
 
   .header-icons img {
     height: 20px;
-    padding: 0px 3px 0px 3px;
+    padding: 0px 10px 0px 10px;
   }
 
   .main-nav ul {
@@ -39,6 +38,10 @@
 
   .main-nav li.active a {
     color: #A86A3D;
+  }
+
+  .nav-link {
+    padding: 0px 25px 0px 25px !important;
   }
 
   /* Service Bar */
@@ -89,18 +92,41 @@
   
   .btn-outline:hover {
     background: var(--foreground);
-    color: var(--background);
+    color: #ffffff;
   }
   
   .btn-dark {
     background: var(--foreground);
     border: 1px solid var(--foreground);
-    color: var(--background);
+    color: #ffffff;
   }
   
   .btn-dark:hover {
     background: transparent;
     color: var(--foreground);
+  }
+
+  /* Hot Deals */
+  .carousel-component {
+    width: 190px;
+    height: 250px; 
+  }
+  .carousel-image img {
+    width: 190px;
+    height: 250px;
+  }
+
+  .carousel-component-footer{
+    background-color: #B7B79A99;
+    width: 190px;
+    height: 70px;
+  }
+
+  .rounded-circle{
+    background-color: #C4C4C4;
+    width: 6.25px;
+    height: 6.25px;
+    border: none;
   }
 
   /* Featured Products Section */
@@ -113,6 +139,15 @@
   .Product-card-2 {
     height: 360px;
     background-color: #EAE9E7;
+  }
+
+  .Product-card-11 {
+    height: 200px;
+    background-color: #FAFAFA;
+  }
+
+  .Product-card-11 img {
+    height: 200px;
   }
 
    .card-decor {
@@ -153,7 +188,7 @@
     color: black;
   }
 
-  /* bed-sectio */
+  /* bed-section */
 
   .bed-banner {
     position: relative;
@@ -219,6 +254,55 @@
 
     /* Responsiviness */
 
+    /* Header */
+    @media (max-width: 1200px) {
+      .nav-link {
+        padding: 0px 10px 0px 10px !important;
+      }
+      .hero-section{
+        border: none;
+        box-shadow: none;
+      }
+    }
+
+    /* HOT DEALS */
+    @media (max-width: 400px) {
+      .carousel-component {
+        width: 170px;
+      }
+      .carousel-image img {
+        width: 170px;
+      }
+    
+      .carousel-component-footer{
+        background-color: #B7B79A99;
+        width: 170px;
+      }
+    }
+
+    /* HERO */
+    @media (max-width: 576px) {
+      .logo-2 {
+        font-size: 16px;
+      }
+      .hero-text p {
+        font-size: 14px;
+      }
+      .hero-text h2 {
+        font-size: 20px !important;
+      }
+      .hero-image img{
+        width: 200px !important;
+        height: 150px !important;
+      }
+      .icon-link img{
+        padding: 0px 20px 0px 20px !important;
+      }
+    }
+    
+    /* Product Section */
+
+
     @media (max-width: 992px){
       .line {
         display: none;
@@ -250,3 +334,7 @@
       }
     }
     
+    /* BED BANNER */
+    @media (width:992px){
+      
+    }
