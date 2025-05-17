@@ -5,87 +5,630 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moody Studio</title>
-    <link rel="stylesheet" href="assets/styles/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="assets/styles/main.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="moody-studio">
-        <!-- Header -->
-        <header class="header">
-            <div class="container">
-                <div class="header-content">
-                    <div class="logo">MOODY STUDIO</div>
-                    <div class="header-icons">
-                        <a href="#" class="icon-link"><img src="assets/images/icons/search.png" alt="search"></a>
-                        <a href="#" class="icon-link"><img src="assets/images/icons/user.png" alt="user"></a>
-                        <a href="#" class="icon-link"><img src="assets/images/icons/shop.png" alt="shop"></a>
-                        <a href="#" class="icon-link"><img src="assets/images/icons/heart.png" alt="heart"></a>
-                    </div>
-                </div>
-                <div class="line-hr">
-                    <hr>
-                </div>
-                <nav class="main-nav">
-                    <ul>
-                        <li class="active"><a href="#">HOME</a></li>
-                        <li><a href="#">STORE</a></li>
-                        <li><a href="#">ACCESSORIES</a></li>
-                        <li><a href="#">BRAND</a></li>
-                        <li><a href="#">PAGES</a></li>
-                        <li><a href="#">ABOUT US</a></li>
-                        <li><a href="#">NEWS</a></li>
-                        <li><a href="#">CONTACT US</a></li>
-                    </ul>
-                </nav>
-                <hr>
-            </div>
-        </header>
 
-        <!-- Service Bar -->
-        <div class="service-bar">
-            <div class="container">
-                <div class="service-items">
-                    <div class="service-item">
-                        <div class="service-icon">
-                            <img src="assets/images/icons/track.png" alt="track">
-                        </div>
-                        <span>FREE SHIPPING</span>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content d-flex justify-content-between align-items-center mt-4">
+                <div class="logo h4 fw-bold">MOODY STUDIO</div>
+                <div class="logo-2 h4 fw-bold">URBAN OUTFITTERS</div>
+                <div class="header-icons d-flex">
+                    <a href="#" class="icon-link d-none d-md-flex"><img class="img-fluid" src="assets/images/icons/search.png" alt="search"></a>
+                    <a href="#" class="icon-link"><img class="img-fluid" src="assets/images/icons/user.png" alt="user"></a>
+                    <a href="#" class="icon-link"><img class="img-fluid" src="assets/images/icons/shop.png" alt="shop"></a>
+                    <a href="#" class="icon-link d-none d-md-flex"><img class="img-fluid" src="assets/images/icons/heart.png" alt="heart"></a>
+                </div>
+            </div>
+            <hr class="mt-1 line">
+            <nav class="navbar navbar-expand-lg container main-nav">
+              <div class="container">
+                <button class="navbar-toggler me-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mx-auto d-flex justify-content-evenly align-items-center fw-bold">
+                    <li class="nav-item active"><a href="#" class="nav-link">HOME</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">STORE</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">ACCESSORIES</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">BRAND</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">PAGES</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">ABOUT US</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">NEWS</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">CONTACT US</a></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+            <hr class="mt-1 line">
+        </div>
+    </header>
+
+    <!-- Service Bar -->
+    <section class="service-bar">
+        <div class="container">
+            <div class="service-items mt-4 d-flex justify-content-around fw-bold">
+                <div class="service-item d-flex align-items-center">
+                    <img class="service-icon me-3" src="assets/images/icons/track.png" alt="track">
+                    <span class="mt-2">FREE SHIPPING</span>
+                </div>
+                <div class="service-item d-flex align-items-center">
+                    <img class="service-icon me-3" src="assets/images/icons/bank-card.png" alt="bank-card">
+                    <span class="mt-2">100% MONEY BACK</span>
+                </div>
+                <div class="service-item d-flex align-items-center">
+                    <img class="service-icon me-3" src="assets/images/icons/headphone.png" alt="headphone">
+                    <span class="mt-2">SUPPORT 24/7</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="hero-section my-1">
+        <div class="container">
+          <div class="row">
+            <div class="hero-content justify-content-evenly d-flex align-items-center">
+              <div class="hero-image col-md-6 col-sm-6 col-xs-6">
+                <img src="assets/images/chair-1.png" alt="Modern furniture" class="chair-image">
+              </div>
+              <div class="hero-text fw-bold col-md-6 col-sm-6 col-xs-6">
+                <p class="fs-6">HOT DEALS THIS WEEK</p>
+                <h2 class="fs-1 fw-bold">SALE UP 50%</h2>
+                <h2 class="fs-1 fw-bold">MODERN FURNITURE</h2>
+                <button class="btn btn-outline fw-bold mt-3">VIEW NOW</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- Product Section -->
+    <section class="container mt-5 d-none d-lg-block">
+        <div class="row g-4">
+            <div class="col-md-6 col-sm-6">
+                <div class="Product-card-1 d-flex position-relative overflow-hidden align-items-center">
+                    <img src="assets/images/chair-2.png" alt="chair-2" class="img-fluid">
+                    <div>
+                        <p class="fs-4 fw-bold">INY VINTAGE CHAIR</p>
+                        <a href="#" class="btn btn-outline fw-bold mt-2">VIEW DETAILS</a>
                     </div>
-                    <div class="service-item">
-                        <div class="service-icon">
-                            <img src="assets/images/icons/bank-card.png" alt="bank-card">
-                        </div>
-                        <span>100% MONEY BACK</span>
-                    </div>
-                    <div class="service-item">
-                        <div class="service-icon">
-                            <img src="assets/images/icons/headphone.png" alt="headphone">
-                        </div>
-                        <span>SUPPORT 24/7</span>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6">
+                <div class="Product-card-2 d-flex position-relative overflow-hidden align-items-center">
+                    <img src="assets/images/jug.png" alt="jug" class="img-fluid">
+                    <div>
+                        <p class="fs-4 fw-bold">  LARGE TERRACOTA VASE</p>
+                        <a href="#" class="btn btn-outline fw-bold mt-2">VIEW DETAILS</a>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
 
-        <!-- Hero Section -->
-        <section class="hero-section">
-            <div class="container">
-                <div class="hero-content">
-                    <div class="hero-image">
-                        <img src="assets/images/chair-1.png" alt="Modern furniture" class="chair-image">
+    <!-- Hot Deals -->
+    <section class="hot-deals my-5 container d-none">
+      <div>
+        <h3 class="fw-bold">HOT DEALS</h3>
+      </div>
+      <div id="hot-deals-carousel" class="carousel slide mt-4" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+          <!-- First Carousel Item -->
+          <div class="carousel-item active">
+            <div class="row g-2">
+              <div class="carousel-component">
+                <div class="position-relative">
+                  <div class="bg-light carousel-image">
+                    <img src="assets/images/towel.png" alt="towel">
+                  </div>
+                  <div class="position-absolute bottom-0 p-2 carousel-component-footer" >
+                    <div class="text-white">
+                      <div class="text-white fs-6 fw-bold">Linen Beach Towel</div>
+                      <div class="fw-bold text-white fs-4 fw-bold">30$</div>
                     </div>
-                    <div class="hero-text">
-                        <h3>HOT DEALS THIS WEEK</h3>
-                        <h2>SALE UP 50%</h2>
-                        <h2>MODERN FURNITURE</h2>
-                        <button class="btn btn-outline">VIEW NOW</button>
-                    </div>
+                  </div>
                 </div>
+              </div>
+              <div class="carousel-component ms-1">
+                <div class="position-relative">
+                  <div class="bg-light carousel-image">
+                    <img src="assets/images/dish.png" alt="towel">
+                  </div>
+                  <div class="position-absolute bottom-0 p-2 carousel-component-footer" >
+                    <div class="text-white">
+                      <div class="text-white fs-6 fw-bold">Linen Beach Dish</div>
+                      <div class="fw-bold text-white fs-4 fw-bold">30$</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-        </section>
+          </div>
+
+          <!-- Second Carousel Item -->
+          <div class="carousel-item">
+            <div class="row g-2">
+              <div class="carousel-component">
+                <div class="position-relative">
+                  <div class="bg-light carousel-image">
+                    <img src="assets/images/plate.png" alt="towel">
+                  </div>
+                  <div class="position-absolute bottom-0 p-2 carousel-component-footer" >
+                    <div class="text-white">
+                      <div class="text-white fs-6 fw-bold">Linen Beach Towel</div>
+                      <div class="fw-bold text-white fs-4 fw-bold">30$</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-component ms-1">
+                <div class="position-relative">
+                  <div class="bg-light carousel-image">
+                    <img src="assets/images/4-pack-Ceramic-Cups.png" alt="towel">
+                  </div>
+                  <div class="position-absolute bottom-0 p-2 carousel-component-footer" >
+                    <div class="text-white">
+                      <div class="text-white fs-6 fw-bold">Linen Beach Towel</div>
+                      <div class="fw-bold text-white fs-4 fw-bold">30$</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Indicator Button -->
+        <div class="text-center mt-3">
+          <div class="d-inline-flex gap-1">
+            <button type="button" class="rounded-circle" data-bs-target="hot-deals-carousel" ></button>
+            <button type="button" class="rounded-circle" data-bs-target="hot-deals-carousel" ></button>
+            <button type="button" class="rounded-circle" data-bs-target="hot-deals-carousel" ></button>
+            <button type="button" class="rounded-circle" data-bs-target="hot-deals-carousel" ></button>
+            <button type="button" class="rounded-circle" data-bs-target="hot-deals-carousel" ></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- IN VINTAGE CHAIR FOR MOBILE VERSION -->
+     <section class="w-100 d-xl-none d-lg-none d-xxl-none">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="Product-card-11 d-flex position-relative overflow-hidden align-items-center">
+            <img src="assets/images/chair-2.png" alt="chair-2" class="img-fluid">
+            <div>
+                <p class="fs-4 fw-bold">INY VINTAGE CHAIR</p>
+                <a href="#" class="btn btn-outline fw-bold mt-2">VIEW DETAILS</a>
+            </div>
+        </div>
     </div>
+     </section>
+    <!-- Featured Products Section -->
+    <section class="container my-5 d-none d-lg-block">
+        <div class="row g-4">
+          <!-- Product 1 -->
+          <div class="col-md-3 col-sm-6">
+            <div class="card-decor">
+              <div class="card-overlay">
+                <h5 class="mb-2">DECOR</h5>
+                <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="#" class="btn btn-outline-light mt-2">VIEW ALL</a>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Product 2 -->
+          <div class="col-md-3 col-sm-6">
+            <div class="product-card">
+              <img src="assets/images/towel.png" class="img-fluid mb-3" alt="Square Clear Glass Box">
+              <div class="rating">
+                <h6 class="fw-bold mt-4">LINEN BEACH TOWEL</h6>
+                <img src="assets/images/stars.png" alt="stars">
+              </div>
+              <p class="price fw-bold pt-2">$30</p>
+            </div>
+          </div>
+      
+          <!-- Product 3 -->
+          <div class="col-md-3 col-sm-6">
+            <div class="product-card">
+              <img src="assets/images/glass-box.png" class="img-fluid mb-3" alt="4-pack Small Ceramic Plates">
+              <div class="rating">
+                <h6 class="fw-bold mt-4">Square Clear Glass Box</h6>
+                <img src="assets/images/stars.png" alt="stars">
+              </div>
+              <p class="price fw-bold pt-2">$30</p>
+            </div>
+          </div>
+      
+          <!-- Product 4 -->
+          <div class="col-md-3 col-sm-6">
+            <div class="product-card">
+              <img src="assets/images/dish.png" class="img-fluid mb-3" alt="Round Jute Placemat">
+              <div class="rating">
+                <h6 class="fw-bold mt-4">4-pack Small Ceramic Plates</h6>
+                <img src="assets/images/stars.png" alt="stars">
+              </div>
+              <p class="price fw-bold pt-2">$30</p>
+            </div>
+          </div>
+      
+          <!-- Product 5 -->
+          <div class="col-md-3 col-sm-6">
+            <div class="product-card">
+              <img src="assets/images/large-glass-box.png" class="img-fluid mb-3" alt="Square Clear Glass Box">
+              <div class="rating">
+                <h6 class="fw-bold mt-4">Large Clear Glass Box</h6>
+                <img src="assets/images/stars.png" alt="stars">
+              </div>
+              <p class="price fw-bold pt-2">$30</p>
+            </div>
+          </div>
+      
+          <!-- Product 6 -->
+          <div class="col-md-3 col-sm-6">
+            <div class="product-card">
+              <img src="assets/images/jute-placent.png" class="img-fluid mb-3" alt="4-pack Small Ceramic Plates">
+              <div class="rating">
+                <h6 class="fw-bold mt-4">Round Jute Placemat</h6>
+                <img src="assets/images/stars.png" alt="stars">
+              </div>
+              <p class="price fw-bold pt-2">$30</p>
+            </div>
+          </div>
+      
+          <!-- Product 7 -->
+          <div class="col-md-3 col-sm-6">
+            <div class="product-card">
+              <img src="assets/images/metal-wire-basket.png" class="img-fluid mb-3" alt="Round Jute Placemat">
+              <div class="rating">
+                <h6 class="fw-bold mt-4">Metal Wire Basket</h6>
+                <img src="assets/images/stars.png" alt="stars">
+              </div>
+              <p class="price fw-bold pt-2">$30</p>
+            </div>
+          </div>
+
+          <!-- Product 8 -->
+          <div class="col-md-3 col-sm-6">
+            <div class="card-decor">
+              <div class="card-overlay">
+                <h5 class="mb-2">DECOR</h5>
+                <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="#" class="btn btn-outline-light mt-2">VIEW ALL</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Bed Banner Section -->
+      <section class="my-4">
+          <div class="bed-banner">
+              <div class="product-overlay position-absolute p-4">
+                  <h5 class="fw-bold text-uppercase">BEDSHEET SETS</h5>
+                  <div class="d-flex align-items-baseline d-none d-lg-block">
+                    <span class="product-price">$50.00</span>
+                    <span class="product-old-price">$220.00</span>
+                  </div>
+                  <p class="product-description d-none d-lg-block">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                  </p>
+                  <button class="btn btn-outline fw-bold mt-1">View Details</button>
+              </div>
+          </div>
+      </section>
+
+      <!-- Top Rating -->
+      <section class="container my-5">
+        <h3 class="fw-bold mb-4">TOP RATING</h3>
+        <div class="row d-none d-lg-flex">
+
+          <!-- Product 1 -->
+          <div class="product-rating col-md-4 col-sm-6 d-flex align-items-center">
+            <img src="assets/images/tray.png" class="rate img-fluid h-100" alt="Tray with Foot">
+            <div class="ms-3">
+              <h6 class="fw-bold fs-5">Tray with Foot</h6>
+              <img src="assets/images/stars.png" alt="stars">
+              <p class="price fs-4 fw-bold pt-2">$30</p>
+            </div>
+          </div>
+      
+          <!-- Product 2 -->
+          <div class="product-rating col-md-4 col-sm-6 d-flex align-items-center">
+            <img src="assets/images/twill.png" class="rate img-fluid h-100" alt="Tray with Foot">
+            <div class="ms-3">
+              <h6 class="fw-bold fs-5">Twill Seat Cushion</h6>
+              <img src="assets/images/stars.png" alt="stars">
+              <p class="price fs-4 fw-bold pt-2">$30</p>
+            </div>
+          </div>
+      
+          <!-- Product 3 -->
+          <div class="product-rating col-md-4 col-sm-6 d-flex align-items-center">
+            <img src="assets/images/fluted-glass.png" class="rate img-fluid h-100" alt="Tray with Foot">
+            <div class="ms-3">
+              <h6 class="fw-bold fs-5">Fluted Beverage Glass</h6>
+              <img src="assets/images/stars.png" alt="stars">
+              <p class="price fs-4 fw-bold pt-2">$30</p>
+            </div>
+          </div>
+      
+          <!-- Product 4 -->
+          <div class="product-rating col-md-4 col-sm-6 d-flex align-items-center">
+            <img src="assets/images/Ceramic-Egg-Cup.png" class="rate img-fluid h-100" alt="Tray with Foot">
+            <div class="ms-3">
+              <h6 class="fw-bold fs-5">Ceramic Egg Cup</h6>
+              <img src="assets/images/stars.png" alt="stars">
+              <p class="price fs-4 fw-bold pt-2">$30</p>
+            </div>
+          </div>
+      
+          <!-- Product 5 -->
+          <div class="product-rating col-md-4 col-sm-6 d-flex align-items-center">
+            <img src="assets/images/bamboo-box.png" class="rate img-fluid h-100" alt="Tray with Foot">
+            <div class="ms-3">
+              <h6 class="fw-bold fs-5">Small Bamboo Box </h6>
+              <img src="assets/images/stars.png" alt="stars">
+              <p class="price fs-4 fw-bold pt-2">$30</p>
+            </div>
+          </div>
+      
+          <!-- Product 6 -->
+          <div class="product-rating col-md-4 col-sm-6 d-flex align-items-center">
+            <img src="assets/images/Metal-Cutlery-Basket.png" class="rate img-fluid h-100" alt="Tray with Foot">
+            <div class="ms-3">
+              <h6 class="fw-bold fs-5">Metal Cutlery Basket</h6>
+              <img src="assets/images/stars.png" alt="stars">
+              <p class="price fs-4 fw-bold pt-2">$30</p>
+            </div>
+          </div>
+      
+          <!-- Product 7 -->
+          <div class="product-rating col-md-4 col-sm-6 d-flex align-items-center">
+            <img src="assets/images/4-pack-Ceramic-Cups.png" class="rate img-fluid h-100" alt="Tray with Foot">
+            <div class="ms-3">
+              <h6 class="fw-bold fs-5">4-pack Ceramic Cups</h6>
+              <img src="assets/images/stars.png" alt="stars">
+              <p class="price fs-4 fw-bold pt-2">$30</p>
+            </div>
+          </div>
+      
+          <!-- Product 8 -->
+          <div class="product-rating col-md-4 col-sm-6 d-flex align-items-center">
+            <img src="assets/images/2-pack-Linen-Napkins.png" class="rate img-fluid h-100" alt="Tray with Foot">
+            <div class="ms-3">
+              <h6 class="fw-bold fs-5">pack Linen Napkins</h6>
+              <img src="assets/images/stars.png" alt="stars">
+              <p class="price fs-4 fw-bold pt-2">$30</p>
+            </div>
+          </div>
+
+          <!-- Product 9 -->
+          <div class="product-rating col-md-4 col-sm-6 d-flex align-items-center">
+            <img src="assets/images/Glazed-Stoneware-Plate-.png" class="rate img-fluid h-100" alt="Tray with Foot">
+            <div class="ms-3">
+              <h6 class="fw-bold fs-5">Glazed Stoneware Plate</h6>
+              <img src="assets/images/stars.png" alt="stars">
+              <p class="price fs-4 fw-bold pt-2">$30</p>
+            </div>
+          </div>
+        </div>
+        <!--  Top Rating Mobile carousel -->
+        <div id="top-rating-carousel" class="carousel slide mt-4 d-lg-none" data-bs-ride="carousel">
+          <div class="carousel-inner">
+  
+            <!-- First Carousel Item -->
+            <div class="carousel-item active">
+              <div class="product-list">
+                <!-- Product 1 -->
+          <div class="product-rating col-md-4 col-sm-6 d-flex align-items-center">
+            <img src="assets/images/tray.png" class="rate img-fluid h-100" alt="Tray with Foot">
+            <div class="ms-3">
+              <h6 class="fw-bold fs-5">Tray with Foot</h6>
+              <img src="assets/images/stars.png" alt="stars">
+              <p class="price fs-4 fw-bold pt-2">$30</p>
+            </div>
+          </div>
+      
+          <!-- Product 2 -->
+          <div class="product-rating col-md-4 col-sm-6 d-flex align-items-center">
+            <img src="assets/images/twill.png" class="rate img-fluid h-100" alt="Tray with Foot">
+            <div class="ms-3">
+              <h6 class="fw-bold fs-5">Twill Seat Cushion</h6>
+              <img src="assets/images/stars.png" alt="stars">
+              <p class="price fs-4 fw-bold pt-2">$30</p>
+            </div>
+          </div>
+      
+          <!-- Product 3 -->
+          <div class="product-rating col-md-4 col-sm-6 d-flex align-items-center">
+            <img src="assets/images/fluted-glass.png" class="rate img-fluid h-100" alt="Tray with Foot">
+            <div class="ms-3">
+              <h6 class="fw-bold fs-5">Fluted Beverage Glass</h6>
+              <img src="assets/images/stars.png" alt="stars">
+              <p class="price fs-4 fw-bold pt-2">$30</p>
+            </div>
+          </div>
+              </div>
+            </div>
+  
+            <!-- Second Carousel Item -->
+            <div class="carousel-item">
+              <div class="produc-lis">
+                  <!-- Product 4 -->
+          <div class="product-rating col-md-4 col-sm-6 d-flex align-items-center">
+            <img src="assets/images/Ceramic-Egg-Cup.png" class="rate img-fluid h-100" alt="Tray with Foot">
+            <div class="ms-3">
+              <h6 class="fw-bold fs-5">Ceramic Egg Cup</h6>
+              <img src="assets/images/stars.png" alt="stars">
+              <p class="price fs-4 fw-bold pt-2">$30</p>
+            </div>
+          </div>
+      
+          <!-- Product 5 -->
+          <div class="product-rating col-md-4 col-sm-6 d-flex align-items-center">
+            <img src="assets/images/bamboo-box.png" class="rate img-fluid h-100" alt="Tray with Foot">
+            <div class="ms-3">
+              <h6 class="fw-bold fs-5">Small Bamboo Box </h6>
+              <img src="assets/images/stars.png" alt="stars">
+              <p class="price fs-4 fw-bold pt-2">$30</p>
+            </div>
+          </div>
+      
+          <!-- Product 6 -->
+          <div class="product-rating col-md-4 col-sm-6 d-flex align-items-center">
+            <img src="assets/images/Metal-Cutlery-Basket.png" class="rate img-fluid h-100" alt="Tray with Foot">
+            <div class="ms-3">
+              <h6 class="fw-bold fs-5">Metal Cutlery Basket</h6>
+              <img src="assets/images/stars.png" alt="stars">
+              <p class="price fs-4 fw-bold pt-2">$30</p>
+            </div>
+          </div>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Indicator Button -->
+          <div class="text-center mt-3">
+            <div class="d-inline-flex gap-1">
+              <button type="button" class="rounded-circle" data-bs-target="top-rating-carousel" ></button>
+              <button type="button" class="rounded-circle" data-bs-target="top-rating-carousel" ></button>
+              <button type="button" class="rounded-circle" data-bs-target="top-rating-carousel" ></button>
+              <button type="button" class="rounded-circle" data-bs-target="top-rating-carousel" ></button>
+              <button type="button" class="rounded-circle" data-bs-target="top-rating-carousel" ></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Newsletter -->
+      <section class="container">
+        <div class="text-center my-5">
+          <button class="btn btn-dark-custom px-5 py-2 load-more">LOAD MORE PRODUCTS</button>
+        </div>
+        <div class="subscribe-section">
+          <div class="row align-items-center">
+            <div class="col-md-6 mb-3 mb-md-0">
+              <p class="fw-bold mb-3 d-none sign-up">SIGN UP FOR THE NEWSLETTER</p>
+              <p class="mb-0">Subscribe for the latest stories and promotions</p>
+            </div>
+            <div class="col-md-6">
+              <div class="input-group">
+                <input type="email" class="form-control" placeholder="Enter your e-mail address" aria-label="Email">
+                <button class="btn btn-dark-custom" type="button">
+                  <a href="#" class="text-white bg-dark"><img src="assets/images/icons/mail.png" class="bg-dark" alt=""></a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="text-white pt-5 pb-4 bg-dark">
+        <div class="footer-1 container text-md-start text-white bg-dark">
+          <div class="row bg-dark">
+      
+            <!-- Company Info -->
+            <div class="col-md-3 mb-4 bg-dark">
+              <h5 class="fw-bold text-uppercase text-white bg-dark">Urban Outfitters</h5>
+              <p class="small text-muted text-white-50 bg-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+              <p class="mb-0 fw-bold text-white bg-dark">121 King Street, Melbourne 3000</p>
+              <p class="mb-0 fw-bold text-white bg-dark">+61 3 8376 6284</p>
+              <p class="fw-bold text-white bg-dark">contact@urbanoutfitters.com</p>
+      
+              <!-- Social Icons -->
+              <div class="mt-3 d-flex gap-3 bg-dark">
+                <a href="#" class="text-white bg-dark px-3"><img src="assets/images/icons/facebook.png" class="bg-dark" alt=""></a>
+                <a href="#" class="text-white bg-dark px-3"><img src="assets/images/icons/twiter.png" class="bg-dark" alt=""></a>
+                <a href="#" class="text-white bg-dark px-3"><img src="assets/images/icons/instagram.png" class="bg-dark" alt=""></a>
+                <a href="#" class="text-white bg-dark px-3"><img src="assets/images/icons/youtube.png" class="bg-dark" alt=""></a>
+              </div>
+            </div>
+      
+            <!-- Shopping Links -->
+            <div class="col-md-2 mb-4">
+              <h6 class="fw-bold text-uppercase text-white bg-dark">Shopping</h6>
+              <ul class="list-unstyled small">
+                <li class="bg-dark"><a href="#" class="text-white-50 text-decoration-none bg-dark">Your cart</a></li>
+                <li class="bg-dark"><a href="#" class="text-white-50 text-decoration-none bg-dark">Your orders</a></li>
+                <li class="bg-dark"><a href="#" class="text-white-50 text-decoration-none bg-dark">Compared items</a></li>
+                <li class="bg-dark"><a href="#" class="text-white-50 text-decoration-none bg-dark">Wishlist items</a></li>
+                <li class="bg-dark"><a href="#" class="text-white-50 text-decoration-none bg-dark">Shipping detail</a></li>
+              </ul>
+            </div>
+      
+            <!-- More Link -->
+            <div class="col-md-2 mb-4 bg-dark">
+              <h6 class="fw-bold text-white text-uppercase bg-dark">More Link</h6>
+              <ul class="list-unstyled small bg-dark">
+                <li class="bg-dark" ><a href="#" class="text-white-50 text-decoration-none bg-dark">Blog</a></li>
+                <li class="bg-dark" ><a href="#" class="text-white-50 text-decoration-none bg-dark">Gift Center</a></li>
+                <li class="bg-dark" ><a href="#" class="text-white-50 text-decoration-none bg-dark">Buying Guides</a></li>
+                <li class="bg-dark" ><a href="#" class="text-white-50 text-decoration-none bg-dark">New Arrivals</a></li>
+                <li class="bg-dark" ><a href="#" class="text-white-50 text-decoration-none bg-dark">Clearance</a></li>
+              </ul>
+            </div>
+      
+            <!-- Blog Posts -->
+            <div class="col-md-5 mb-4 bg-dark">
+              <h6 class="fw-bold text-uppercase text-white bg-dark">From the Blog</h6>
+              <div class="mb-3">
+                <small class="text-muted text-white-50 d-block bg-dark">26 May</small>
+                <p class="mb-1 text-white-50 bg-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <small class="text-muted text-white-50 bg-dark">3 comments</small>
+                <hr class="border-secondary my-2">
+              </div>
+              <div class="">
+                <small class="text-muted text-white-50 d-block bg-dark">27 May</small>
+                <p class="mb-1 text-white-50 bg-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <small class="text-muted bg-dark text-white-50">3 comments</small>
+              </div>
+            </div>
+      
+          </div>
+      
+          <!-- Bottom Bar -->
+          <div class="text-center pt-3 border-top border-secondary mt-3 small text-white-50 bg-dark">
+            Urban Outfitters © – All rights reserved
+          </div>
+        </div>
+        <div class="footer-2 d-lg-none container justify-content-center text-white bg-dark">
+          <div class="mt-2">
+            <h2 class="fw-bold text-uppercase text-center text-white bg-dark">URBAN OUTFITTERS</h2>
+            <div class="foot mt-5">
+              <p class="text-white text-center"><img src="assets/images/icons/phone.png" alt="">   166</p>
+              <p class="text-white">121 king street, Melbourne 3000</p>
+              <p class="text-white">contact@urbanoutfitters.com</p>
+            </div>
+            <ul class="list-unstyled text-center">
+              <li class="text-white py-2">Your cart</li>
+              <li class="text-white py-2">Your orders</li>
+              <li class="text-white py-2">Compared items</li>
+              <li class="text-white py-2">Wishlist items</li>
+              <li class="text-white py-2">Shipping detail </li>
+            </ul>
+        </div>
+          <div class="justify-content-evenly d-flex mt-4">
+          <img src="assets/images/icons/facebook.png" alt="">
+          <img src="assets/images/icons/twiter.png" alt="">
+          <img src="assets/images/icons/instagram.png" alt="">
+          <img src="assets/images/icons/youtube.png" alt="">
+        </div>
+          <div class="text-center pt-3 border-top border-secondary mt-3 small text-white-50 bg-dark">
+            Urban Outfitters © – All rights reserved
+          </div>
+        </div>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 </body>
 
 </html>
